@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Optional;
 
 class TrieNode {
-    HashMap<Character, TrieNode> children;
+    HashMap<Character, TrieNode> children;      //Child node reachable by adding each character
     boolean isEndOfWord;        //Denotes whether the word ending at this node is a valid word or not
 
     public TrieNode(){
