@@ -18,7 +18,7 @@ public class TarjanSCC {
         onStack = new boolean[totalVertices]; //array that signifies whether an element is on stack or not
         stack = new Stack<>(); //the actual stack
         sccs = new ArrayList<>(); //SCC list to be returned
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < totalVertices; i++)
             if (ids[i] == -1)
                 dfs(i);
     }
